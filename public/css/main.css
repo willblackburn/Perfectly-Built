@@ -88,7 +88,7 @@ Site Design By Will Blackburn. coda4.com
 }
 
 .slider {
-  background-color: var(--brandcolor1);
+  background-color: var(--brandcolor2);
   bottom: 0;
   cursor: pointer;
   left: 0;
@@ -112,7 +112,7 @@ Site Design By Will Blackburn. coda4.com
 }
 
 input:checked + .slider {
-  background-color: var(--brandcolor1);
+  /* background-color: var(--brandcolor1); */
 }
 
 input:checked + .slider:before {
@@ -132,7 +132,7 @@ input:checked + .slider:before {
 @media (min-width: 320px) {
   .theme-switch-wrapper {
     bottom: 78px;
-    left: 125px;
+    left: 110px;
   }
   .slider {
     transform: scale(0.5);
@@ -144,7 +144,7 @@ input:checked + .slider:before {
 @media (min-width: 480px) {
   .theme-switch-wrapper {
     bottom: 78px;
-    left: 125px;
+    left: 115px;
   }
   .slider {
     transform: scale(0.5);
@@ -1059,28 +1059,32 @@ ul.social-icons {
 
 .innerEl {
   color: var(--text);
-  box-shadow: 0 0 2px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 2px var(--inverted);
   border-radius: 0.3rem;
   margin-right: 1rem;
   text-align: center;
 }
 
 .inner-a {
-  /* box-shadow: 0 0 2px rgba(247, 24, 24, 0.8); */
-  border-radius: 0.3rem;
-  background-color: var(--brandcolor1);
+  border-radius: 0rem;
+  padding: 1em;
 }
 
 .inner-b {
-  /* box-shadow: 0 0 2px rgba(247, 24, 24, 0.8); */
-  border-radius: 0.3rem;
-  background-color: var(--brandcolor2);
+  /* box-shadow: 0 0 2px var(--brandcolor2); */
+  border-radius: 0rem;
+  border-color: var(--brandcolor2);
+  padding: 1em;
 }
 
 .inner-c {
-  /* box-shadow: 0 0 2px rgba(247, 24, 24, 0.8); */
-  border-radius: 0.3rem;
-  background-color: var(--brandcolor3);
+  /* box-shadow: 0 0 2px var(--brandcolor3); */
+  border-radius: 0rem;
+  padding: 1em;
+}
+
+.outerE1 {
+  color: var(--brandcolor1);
 }
 
 .collectionEl .outerEl {
@@ -1101,6 +1105,51 @@ ul.social-icons {
 
 .collectionEl .innerEl p + p {
   margin-top: 0;
+}
+
+/* Small Mobile */
+
+@media (min-width: 320px) {
+  .collectionEl {
+    flex-flow: row wrap;
+  }
+}
+
+/* mobile */
+
+@media (min-width: 480px) {
+  .collectionEl {
+    flex-flow: row wrap;
+  }
+}
+
+/* tablet */
+
+@media (min-width: 768px) {
+}
+
+/* Small Desktop */
+
+@media (min-width: 992px) {
+  .collectionEl {
+    flex-flow: row wrap;
+  }
+}
+
+/* Large Laptop */
+
+@media (min-width: 1200px) {
+  .collectionEl {
+    flex-flow: nowrap;
+  }
+}
+
+/* Large TV */
+
+@media (min-width: 1400px) {
+  .collectionEl {
+    flex-flow: nowrap;
+  }
 }
 
 /*-------------------------------------------------------------------------------
