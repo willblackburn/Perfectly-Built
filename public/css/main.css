@@ -120,11 +120,11 @@ input:checked + .slider:before {
 }
 
 .slider.round {
-  border-radius: 34px;
+  /* border-radius: 34px; */
 }
 
 .slider.round:before {
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 
 /* Small Mobile */
@@ -1066,12 +1066,14 @@ ul.social-icons {
 }
 
 .inner-a {
+  text-transform: uppercase;
   border-radius: 0rem;
   padding: 1em;
 }
 
 .inner-b {
   /* box-shadow: 0 0 2px var(--brandcolor2); */
+  text-transform: uppercase;
   border-radius: 0rem;
   border-color: var(--brandcolor2);
   padding: 1em;
@@ -1079,6 +1081,7 @@ ul.social-icons {
 
 .inner-c {
   /* box-shadow: 0 0 2px var(--brandcolor3); */
+  text-transform: uppercase;
   border-radius: 0rem;
   padding: 1em;
 }
@@ -1264,6 +1267,14 @@ ul.social-icons {
     .service {
       border: none;
     }
+    .line-1 {
+      margin-top: 5rem;
+      height: 1px;
+      background: var(--text);
+    }
+    .service p {
+      padding-top: 2rem;
+    }
   }
 
   .service {
@@ -1301,6 +1312,7 @@ ul.social-icons {
     font-size: 1rem;
     line-height: 1;
     margin: 0rem 0 0 0;
+    
   }
 
   .service h4 {
@@ -1325,6 +1337,7 @@ ul.social-icons {
     line-height: 1;
     padding: 30px;
     margin: 0.7rem;
+    
   }
 
   .service h4 {
