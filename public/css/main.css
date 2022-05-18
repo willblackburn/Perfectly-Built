@@ -31,7 +31,7 @@ Site Design By Will Blackburn. coda4.com
   --inverted-light: #211f1f;
   --inverted-dark: #f2f3f4;
 
-  --brandcolor1: #dfd7d2;
+  --brandcolor1: #aa828c;
   --brandcolor2: #1a5e67;
   --brandcolor3: #f5c654;
 }
@@ -461,7 +461,7 @@ ul.social-icons {
 }
 
 .social-icons svg {
-  filter: invert(100%);
+  fill: var(--inverted);
   width: 35px;
   height: 35px;
 }
@@ -1615,7 +1615,8 @@ input[type='checkbox']:checked ~ .grid {
 }
 
 .footer .row svg {
-  filter: invert(100%);
+  /* filter: invert(100%); */
+  fill: var(--inverted);
 }
 
 .footer .row a {
