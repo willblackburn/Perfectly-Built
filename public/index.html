@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Perfectly Built - Kitchens and Bathroom construction services | London
+      Perfectly Built - Kitchens and Bathroom Building services | London
     </title>
     <meta
       name="description"
-      content="We provide Art, Picture and Mirror Hanging & Installation Services throughout London, UK and the surrounding areas."
+      content="We provide Kitchen and Bathroom building services throughout London and the surrounding areas."
     />
     <meta name="author" content="PerfectlyBuilt" />
 
@@ -126,6 +126,10 @@
   </head>
 
   <!-- End Head -->
+
+  <!-- Progress Bar -->
+
+  <div class="scroll-line"></div>
 
   <!-- BEGIN NAV -->
 
@@ -389,15 +393,13 @@
           </div>
           <h4>Kitchen | Bathroom</h4>
           <p>
-             We install kitchens and bathrooms to a high standard and
-            work hard to ensure that every detail is millimetre perfect. We
-            provide trade discounts so please be sure to make contact before
-            purchasing materials.
+            We install kitchens and bathrooms to a high standard and work hard
+            to ensure that every detail is millimetre perfect. We provide trade
+            discounts so please be sure to make contact before purchasing
+            materials.
           </p>
           <div class="line-1"></div>
         </div>
-        
-        
 
         <div class="service service2" data-aos="flip-up">
           <div class="icon-container">
@@ -421,7 +423,7 @@
           <p>
             Whether you need a wall built or tiled, a floor laid or an outside
             space transformed, we have the skills to get the job carried out
-             perfectly and look forward to working with you on your next project.
+            perfectly and look forward to working with you on your next project.
           </p>
         </div>
       </div>
@@ -866,6 +868,23 @@
       }
 
       toggleSwitch.addEventListener('change', switchTheme, false)
+    </script>
+
+    <!-- Progress Bar -->
+
+    <script>
+      const scrollline = document.querySelector('.scroll-line')
+
+      function fillscrollline() {
+        const windowHeight = window.innerHeight
+        const fullHeight = document.body.clientHeight
+        const scrolled = window.scrollY
+        const percentScrolled = (scrolled / (fullHeight - windowHeight)) * 100
+
+        scrollline.style.width = percentScrolled + '%'
+      }
+
+      window.addEventListener('scroll', fillscrollline)
     </script>
 
     <!-- End Scripts -->

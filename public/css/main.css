@@ -185,6 +185,28 @@ input:checked + .slider:before {
   }
 }
 
+/* Progress Bar */
+
+.scroll-line {
+  background: linear-gradient(
+      217deg,
+      rgba(185, 185, 185, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(
+      127deg,
+      rgba(198, 199, 198, 0.733),
+      rgba(0, 255, 0, 0) 70.71%
+    ),
+    linear-gradient(336deg, rgba(181, 182, 182, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  bottom: 0;
+  left: 0;
+  height: 0.2em;
+  position: fixed;
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  z-index: 999;
+}
+
 /*-------------------------------------------------------------------------------
     Main
 -------------------------------------------------------------------------------*/
@@ -485,7 +507,7 @@ ul.social-icons {
 -------------------------------------------------------------------------------*/
 
 .home {
-  background-image: url('../img/bg1-2.webp');
+  background-image: url('../img/bg1-4.webp');
   background-position: 52% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -511,7 +533,6 @@ ul.social-icons {
 }
 
 .about {
-  /* background: url('../img/bg2-3.webp'); */
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -519,7 +540,6 @@ ul.social-icons {
 }
 
 .services {
-  /* background: url('../img/bg3.webp'); */
   background-position: 40% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -532,7 +552,6 @@ ul.social-icons {
 }
 
 .residential {
-  background: url('../img/bg-restaurant.webp');
   background-position: 70% 50%;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -541,7 +560,6 @@ ul.social-icons {
 }
 
 .commercial {
-  background: url('../img/bg5.webp');
   background-position: 40% 50%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -556,7 +574,6 @@ ul.social-icons {
 }
 
 .contact {
-  background: url('../img/bg7.webp');
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1271,6 +1288,7 @@ ul.social-icons {
       margin-top: 5rem;
       height: 1px;
       background: var(--text);
+      opacity: 0.3;
     }
     .service p {
       padding-top: 2rem;
@@ -1312,7 +1330,6 @@ ul.social-icons {
     font-size: 1rem;
     line-height: 1;
     margin: 0rem 0 0 0;
-    
   }
 
   .service h4 {
@@ -1337,7 +1354,6 @@ ul.social-icons {
     line-height: 1;
     padding: 30px;
     margin: 0.7rem;
-    
   }
 
   .service h4 {
