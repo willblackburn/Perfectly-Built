@@ -1028,8 +1028,9 @@ ul.social-icons {
 
 @media (min-width: 320px) {
   .item {
-    /* padding-top: 6rem; */
+    padding-top: 6rem;
     padding-bottom: 8rem;
+    padding: 1.5em;
   }
 }
 
@@ -1037,7 +1038,7 @@ ul.social-icons {
 
 @media (min-width: 480px) {
   .item {
-    /* padding-top: 6rem; */
+    padding-top: 6rem;
     padding-bottom: 8rem;
   }
 }
@@ -1046,7 +1047,7 @@ ul.social-icons {
 
 @media (min-width: 768px) {
   .item {
-    /* padding-top: 6rem; */
+    padding-top: 8rem;
     padding-bottom: 8rem;
   }
 }
@@ -1072,6 +1073,7 @@ ul.social-icons {
 
 @media (min-width: 1400px) {
   .item {
+    padding: 6em;
     padding-top: 12rem;
   }
 }
