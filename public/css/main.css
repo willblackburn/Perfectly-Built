@@ -213,6 +213,7 @@ input:checked + .slider:before {
 
 body {
   background-color: var(--bg);
+  overflow-x: hidden;
 }
 
 .section,
@@ -290,18 +291,21 @@ a {
   left: 18px;
   margin-top: 0.2rem;
   max-width: 100%;
+  /* padding: .5rem; */
   height: auto;
   width: auto\9; /* ie8 */
   z-index: 999;
 }
 
 .header {
+  /* background-color: var(--bg); */
   display: flex;
   margin: 0 auto;
   width: 100%;
   max-width: 100%;
   box-shadow: none;
-  position: fixed;
+  position: absolute;
+  /* ^^^^ Menu fixed or note */
   height: 90px !important;
   overflow: hidden;
   z-index: 10;
@@ -385,7 +389,8 @@ input[type='checkbox'] {
   transition: all 0.3s;
   box-sizing: border-box;
   cursor: pointer;
-  position: fixed;
+  position: absolute;
+  /* Toggle Menu Fixed or Not */
   z-index: 999;
   height: 100%;
   width: 100%;
@@ -532,14 +537,26 @@ ul.social-icons {
   }
 }
 
+.item-right {
+  /* background: url(img/bg-about.webp) center center no-repeat; */
+  background-image: url(../img/bg-about.webp);
+  /* width: 100%;
+  height: auto; */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 .about {
-  background-position: 50% 50%;
+  /* background-color: #c7c1b9; */
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 1;
 }
 
 .services {
+  /* background-color: #675b56; */
   background-position: 40% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -548,7 +565,6 @@ ul.social-icons {
 
 .process {
   opacity: 1;
-  /* box-shadow: inset 0px 0px 0px 80px rgb(255, 255, 255); */
 }
 
 .residential {
@@ -987,13 +1003,12 @@ ul.social-icons {
 .item {
   width: 50%;
   min-height: 500px;
-  padding: 4.2em;
+  padding: 2em;
 }
 
 .item-right {
-  position: sticky;
-  top: 4rem;
   width: 50%;
+  height: auto;
   min-height: 500px;
 }
 
@@ -1018,7 +1033,7 @@ ul.social-icons {
 
 @media (min-width: 320px) {
   .item {
-    padding-top: 6rem;
+    /* padding-top: 6rem; */
   }
 }
 
@@ -1026,7 +1041,7 @@ ul.social-icons {
 
 @media (min-width: 480px) {
   .item {
-    padding-top: 6rem;
+    /* padding-top: 6rem; */
   }
 }
 
@@ -1034,7 +1049,8 @@ ul.social-icons {
 
 @media (min-width: 768px) {
   .item {
-    padding-top: 6rem;
+    /* padding-top: 6rem; */
+    padding-bottom: 6rem;
   }
 }
 
@@ -1169,6 +1185,75 @@ ul.social-icons {
 @media (min-width: 1400px) {
   .collectionEl {
     flex-flow: nowrap;
+  }
+}
+
+/*-------------------------------------------------------------------------------
+    Services 2
+-------------------------------------------------------------------------------*/
+
+.col-text {
+  height: 40em;
+}
+.grid-flex {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+}
+
+.col {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.col-left {
+  order: -1;
+}
+
+.col-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col h4 {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 600;
+  line-height: 3rem;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.col p {
+  color: var(--text);
+  opacity: 0.7;
+}
+
+.Aligner-item {
+  width: 60%;
+}
+.col-image {
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (max-width: 640px) {
+  .grid-flex {
+    height: 40em;
+    flex-direction: column;
+  }
+  .col {
+    order: vertical;
+  }
+  .col-left {
+    order: 0;
+  }
+  .col-text div p {
+    padding: 1em;
+  }
+  .Aligner-item {
+    width: 90%;
   }
 }
 
@@ -1571,7 +1656,7 @@ input[type='checkbox']:checked ~ .grid {
   align-items: flex-start;
   align-content: flex-start;
   height: 100%;
-  padding: 80px 25px 0px 25px;
+  padding: 80px 0px 0px 0px;
   overflow: auto;
   z-index: 0;
   text-align: center;
