@@ -1000,7 +1000,6 @@ ul.social-icons {
 .item {
   width: 50%;
   min-height: 500px;
-  padding: 6em;
 }
 
 .item-right {
@@ -1064,6 +1063,7 @@ ul.social-icons {
 
 @media (min-width: 1200px) {
   .item {
+    padding: 6em;
     padding-top: 9rem;
   }
 }
