@@ -672,6 +672,7 @@ ul.social-icons {
   display: flex;
   align-content: center;
   justify-content: center;
+  padding-bottom: 4rem;
 }
 
 .paragraph-title h3 {
@@ -681,9 +682,9 @@ ul.social-icons {
 }
 
 .paragraph-title-center h3 {
+  font-size: 1.5rem;
   color: var(--text);
   border: 1px solid var(--inverted);
-  border-radius: 10px;
   padding: 4px;
 }
 
@@ -1104,7 +1105,6 @@ ul.social-icons {
 }
 
 .inner-b {
-  /* box-shadow: 0 0 2px var(--brandcolor2); */
   text-transform: uppercase;
   border-radius: 0rem;
   border-color: var(--brandcolor2);
@@ -1112,7 +1112,6 @@ ul.social-icons {
 }
 
 .inner-c {
-  /* box-shadow: 0 0 2px var(--brandcolor3); */
   text-transform: uppercase;
   border-radius: 0rem;
   padding: 1em;
@@ -1470,9 +1469,7 @@ input[type='checkbox']:checked ~ .grid {
   cursor: pointer;
   height: 56px;
   padding-top: 1px;
-
   background-color: var(--bg);
-  /* border-bottom: 1px solid #e1e1e1; */
 }
 
 .faq input[type='checkbox'] {
@@ -1505,7 +1502,7 @@ input[type='checkbox']:checked ~ .grid {
   display: block;
   background: var(--bg);
   color: #4f7351;
-  height: 170px;
+  height: 230px;
   transition: height 0.8s;
   -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -1540,7 +1537,6 @@ input[type='checkbox']:checked ~ .grid {
 }
 
 .footer .row svg {
-  /* filter: invert(100%); */
   fill: var(--inverted);
 }
 
