@@ -1,0 +1,19 @@
+
+
+{
+  "name": "pefectlybuilt",
+  "version": "1.0.0",
+  "description": "Pefectly built website",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel public/index.html",
+    "build": "parcel build public/index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "2.4.1",
+    "prettier": "2.6.2",
+    "sharp": "0.29.3"
+  }
+}
